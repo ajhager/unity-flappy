@@ -37,7 +37,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4441030810105304}
   - component: {fileID: 50356064797294326}
-  - component: {fileID: 61834648421480020}
   - component: {fileID: 114502261630168910}
   m_Layer: 0
   m_Name: Player
@@ -56,6 +55,7 @@ GameObject:
   - component: {fileID: 4623179729389200}
   - component: {fileID: 212533530959763624}
   - component: {fileID: 95118167438380746}
+  - component: {fileID: 58206796588741310}
   m_Layer: 8
   m_Name: Plane
   m_TagString: Player
@@ -124,12 +124,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61834648421480020
-BoxCollider2D:
+--- !u!58 &58206796588741310
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1642523839751022}
+  m_GameObject: {fileID: 1887776096666124}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -137,18 +137,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 0.5}
-  m_EdgeRadius: 0
+  m_Radius: 0.33
 --- !u!95 &95118167438380746
 Animator:
   serializedVersion: 3
