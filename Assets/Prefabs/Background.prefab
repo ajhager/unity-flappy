@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 1
-  tileSizeZ: 18
+  tileSize: 18
 --- !u!212 &212923887256073290
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -112,8 +112,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1932494011
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c113bfc96f3234d1f9a38e05ab9a7a3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.391}
