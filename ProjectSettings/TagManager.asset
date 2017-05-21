@@ -44,3 +44,12 @@ TagManager:
   - name: Units
     uniqueID: 3051149825
     locked: 0
+  - name: Background
+    uniqueID: 1932494011
+    locked: 0
+  - name: Spikes
+    uniqueID: 3967397919
+    locked: 0
+  - name: Ground
+    uniqueID: 1703653185
+    locked: 0
