@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4950913296168716}
   - component: {fileID: 212285892271194552}
   - component: {fileID: 60419595495710474}
-  - component: {fileID: 114832745881178198}
   m_Layer: 0
   m_Name: rockTop
   m_TagString: Untagged
@@ -39,7 +38,6 @@ GameObject:
   - component: {fileID: 4525924166111638}
   - component: {fileID: 212318423743494762}
   - component: {fileID: 60395098291174306}
-  - component: {fileID: 114385590080396722}
   m_Layer: 0
   m_Name: rockBottom
   m_TagString: Untagged
@@ -207,28 +205,6 @@ PolygonCollider2D:
       - {x: 0.19999999, y: -1.155}
       - {x: 0.19999999, y: -1.0649999}
       - {x: 0.29, y: -0.255}
---- !u!114 &114385590080396722
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1482487905144550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b37b70b2064544babf56a71b7165877, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114832745881178198
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1462874798565758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b37b70b2064544babf56a71b7165877, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212285892271194552
 SpriteRenderer:
   m_ObjectHideFlags: 1
