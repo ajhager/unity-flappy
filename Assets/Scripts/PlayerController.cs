@@ -39,6 +39,15 @@ public class PlayerController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         GameManager game = GameObject.FindObjectOfType<GameManager>();
-        game.OnGameOver();
+
+        if (other.gameObject.name == "Star")
+        {
+            Destroy(other.gameObject);
+            game.OnScore(1);
+        }
+        else
+        {
+            game.OnGameOver();
+        }
     }
 }
