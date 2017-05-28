@@ -14,7 +14,7 @@ public class CaveController : MonoBehaviour
     void Start()
     {
         GameManager game = FindObjectOfType<GameManager>();
-        game.onActivate += Activate;
+        game.OnActivated += Activate;
 
         spikes = transform.Find("Spikes");
         ground = transform.Find("Ground").GetComponent<Scroller>();
