@@ -1,38 +1,37 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour {
-	public delegate void OnActivate();
-    public event OnActivate onActivate;
+public class GameManager : MonoBehaviour
+{
+    public delegate void OnActivate();
+    public event OnActivate OnActivated;
 
-    private bool activated = false;
-    private int score = 0;
-    private Text scoreText;
+    bool activated;
+    int score;
+    Text scoreText;
 
-    void Awake ()
+    void Awake()
     {
-        this.scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
+        scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
     }
 
-    void Update ()
+    void Update()
     {
-        if (Input.GetButtonDown("Fire1") && !this.activated)
-		{
-            this.onActivate();
-            this.activated = true;
+        if (Input.GetButtonDown("Fire1") && !activated)
+        {
+            OnActivated();
+            activated = true;
         }
-	}
-
-    public void OnScore (int amount)
-    {
-        this.score += amount;
-        this.scoreText.text = "" + this.score;
     }
 
-	public void OnGameOver ()
+    public void OnScore(int amount)
+    {
+        score += amount;
+        scoreText.text = "" + score;
+    }
+
+    public void OnGameOver()
     {
         SceneManager.LoadScene(0);
     }
